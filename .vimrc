@@ -16,6 +16,7 @@ set shiftwidth=2
 set softtabstop=2
 set smartindent
 set nocompatible
+
 "Used on Coc
 set hidden
 set cmdheight=2
