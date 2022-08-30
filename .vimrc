@@ -29,12 +29,12 @@ set wildmenu
 set background=dark    " Setting dark mode
 
 if has('nvim')
-  let plugPath = "~/.config/nvim/site/plugged"
+  call plug#begin(stdpath('data').'/plugged')
 else  
   let plugPath = '~/.vim/plugged'
+  call plug#begin(plugPath)
 endif
 
-call plug#begin(plugPath)
 
 "Themes
 Plug 'HenryNewcomer/vim-theme-papaya'
