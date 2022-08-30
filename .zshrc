@@ -104,3 +104,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export TERM=xterm-256color
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

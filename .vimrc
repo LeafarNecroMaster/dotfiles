@@ -27,7 +27,14 @@ set shortmess+=c
 "Testing
 set wildmenu
 set background=dark    " Setting dark mode
-call plug#begin('~/.vim/plugged')
+
+if has('nvim')
+  let plugPath = "~/.config/nvim/site/plugged"
+else  
+  let plugPath = '~/.vim/plugged'
+endif
+
+call plug#begin(plugPath)
 
 "Themes
 Plug 'HenryNewcomer/vim-theme-papaya'
