@@ -56,6 +56,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-ragtag'
 Plug 'AndrewRadev/tagalong.vim'
 
+"Fonts
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 colorscheme onehalfdark
