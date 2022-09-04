@@ -3,7 +3,7 @@ syntax enable
 set cursorline
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-set relativenumber
+set number relativenumber
 set sw=2
 set showmatch
 set encoding=utf-8
