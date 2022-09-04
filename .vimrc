@@ -141,6 +141,7 @@ map <leader>l  :Lines<CR>
 
 "General Configurations
 map <leader><leader>w :w<CR> 
+map <leader><leader>0 :x<CR> 
 map <esc><esc> :noh<CR>
 map <TAB> <TAB>
 
@@ -151,10 +152,6 @@ nmap ga <Plug>(EasyAlign)
 "CocSQL
 xmap <leader><tab> <Plug>(coc-format-selected)
 nmap <leader><tab> <Plug>(coc-format-selected)
-
-"Personal Shortcuts
-nmap <leader><leader> w :w
-
 
 let g:lightline ={
   \ 'left': [['mode', 'paste'],
