@@ -108,4 +108,6 @@ export TERM=xterm-256color
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+export STARSHIP_CONFIG=~/example/non/default/path/starship.toml
 eval "$(starship init zsh)"
+
