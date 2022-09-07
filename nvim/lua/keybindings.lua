@@ -1,11 +1,12 @@
--- Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+vim.g.mapleader = ' '
+local map = vim.api.nvim_set_keymap
 
--- Using Lua functions
-nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+--vim
+map('n', '<leader><leader>w', ':w<cr>', {noremap = true, silent = true})
+map('n', '<leader><leader>x', ':x<cr>', {noremap = true, silent = true})
+map('n', '<leader><leader>q<leader>', ':q<cr>', {noremap = true, silent = true})
+
+--Fzf.vim
+map('n','<leader><leader>l', ':Lines<cr>', {noremap = true, silent = true})
+map('n','<leader><leader>fl', ':Files<cr>', {noremap = true, silent = true})
+map('n','<leader><leader>bf', ':BFiles<cr>', {noremap = true, silent = true})

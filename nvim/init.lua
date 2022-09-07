@@ -1,5 +1,6 @@
 require('plugins')
 require('base')
+require('keybindings')
 require("mason").setup({
     ui = {
         icons = {
@@ -15,7 +16,7 @@ vim.cmd[[colorscheme tokyonight]]
 require('lualine').setup {
   options = {
     -- ... your lualine config
-    theme = 'tokyonight'
+    theme = 'tokyonight-night'
     -- ... your lualine config
   }
 }

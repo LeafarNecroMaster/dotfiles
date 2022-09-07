@@ -7,6 +7,8 @@ return require('packer').startup(function(use)
   --Theme
   use 'folke/tokyonight.nvim'
 
+  use 'junegunn/fzf'
+  use 'junegunn/fzf.vim'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
