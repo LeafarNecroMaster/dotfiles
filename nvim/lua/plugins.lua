@@ -9,6 +9,7 @@ return require('packer').startup(function(use)
 
   use 'junegunn/fzf'
   use 'junegunn/fzf.vim'
+  use 'easymotion/vim-easymotion'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
