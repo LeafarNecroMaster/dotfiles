@@ -20,3 +20,7 @@ require('lualine').setup {
     -- ... your lualine config
   }
 }
+
+--AutoPairs
+--require('nvim-ts-autotag').setup()
+
