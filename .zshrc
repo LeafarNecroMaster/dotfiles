@@ -111,3 +111,4 @@ source <(ng completion script)
 export STARSHIP_CONFIG=~/.config/starship.tml
 eval "$(starship init zsh)"
 
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
